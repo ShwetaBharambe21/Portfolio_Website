@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b1220;
+    color: white;
+}
+
+/* LIGHT MODE */
+body.light {
+    background: #ffffff;
+    color: #111;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+/* PROFILE */
+.profile {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 10%;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* LIGHT CARD */
+body.light .card {
+    background: #f3f4f6;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #6366f1;
+    color: white;
+    text-decoration: none;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    margin: 5px;
+    background: #111827;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* DIAGRAM */
+.diagram-container {
+    position: relative;
+}
+
+.diagram {
+    width: 100%;
+}
+
+/* POINT */
+.point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #6366f1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TOOLTIP */
+#tooltip {
+    position: absolute;
+    display: none;
+    background: #111;
+    padding: 5px 10px;
+}
+
+/* TOGGLE SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
